@@ -36,6 +36,7 @@
     "import/no-mutable-exports": "error",
     "import/no-webpack-loader-syntax": "error",
     "import/prefer-default-export": "error",
+    "import/no-unresolved": "off",
     "indent": "off",
     "jsx-a11y/alt-text": "error",
     "jsx-a11y/aria-role": "error",
