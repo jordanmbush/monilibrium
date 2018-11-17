@@ -90,4 +90,5 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 const PORT = 4000;
+// eslint-disable-next-line
 app.listen(PORT, console.log(`Listening on port ${PORT}.`));
