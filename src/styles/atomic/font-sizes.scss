@@ -1,0 +1,11 @@
+$max-font-size: 40;
+
+@mixin font-sizes {
+  @for $i from 1 through $max-font-size {
+    .fs-#{$i} {
+      font-size: #{$i}px;
+    }
+  }
+}
+
+@include font-sizes;

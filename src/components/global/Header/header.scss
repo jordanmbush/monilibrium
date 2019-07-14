@@ -1,0 +1,17 @@
+@import '@styles/global.scss';
+
+.header {
+  background-color: #1d1a1a33;
+  color: white;
+  height: 45px;
+  padding: 10px 50px;
+  width: 100%;
+
+  button {
+    all: unset;
+    justify-self: flex-end;
+    padding: 5px;
+    white-space: nowrap;
+    width: 100px;
+  }
+}

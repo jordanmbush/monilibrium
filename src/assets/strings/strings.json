@@ -1,0 +1,14 @@
+{
+  "labels": {
+    "en": {
+      "createBudgetTodayHtml": "<strong>Create your budget quickly and effortlessly,<strong><span> and start making the most of your money </span><strong>today</strong>",
+      "login": "Login",
+      "welcomeBack": "Welcome Back"
+    },
+    "es": {
+      "createBudgetTodayHtml": "<strong>Crea tu presupuesto rapido y facil,<strong><span> empiesa aser lo maximo con tu dinero </span><strong>ahora</strong>",
+      "login": "Iniciar Sesión",
+      "welcomeBack": "Bienvenido de nuevo"
+    }
+  }
+}

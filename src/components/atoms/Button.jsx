@@ -1,9 +1,13 @@
 import React from 'react';
+import './button.scss';
 
-const Button = ({children, ...props}) => (
-  <button type="button" {...props}>
-    {(children && typeof children === 'function' && children()) || children}
-  </button>
-);
+const Button = ({href, children, ...props}) => {
+  const Tag = href ? 'a' : 'button';
+  return (
+    <Tag {...props} href={href && href}>
+      {children && typeof children === 'function' ? children() : children}
+    </Tag>
+  );
+};
 
 export default Button;

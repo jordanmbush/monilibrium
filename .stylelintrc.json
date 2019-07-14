@@ -1,3 +1,41 @@
 {
-  "extends": "stylelint-config-recommended-scss"
+  "extends": "stylelint-config-recommended-scss",
+  "plugins": [
+    "stylelint-declaration-block-no-ignored-properties",
+    "stylelint-group-selectors",
+    "stylelint-high-performance-animation",
+    "stylelint-prettier",
+    "stylelint-order"
+  ],
+  "rules": {
+    "plugin/declaration-block-no-ignored-properties": true,
+    "plugin/no-low-performance-animation-properties": true,
+    "plugin/stylelint-group-selectors": true,
+    "prettier/prettier": true,
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "except": ["blockless-after-same-name-blockless"],
+        "ignore": ["after-comment", "first-nested"],
+        "severity": "warning"
+      }
+    ],
+    "custom-property-empty-line-before": [
+      "always",
+      {
+        "except": ["after-custom-property"],
+        "ignore": ["after-comment", "inside-single-line-block"],
+        "severity": "warning"
+      }
+    ],
+    "rule-empty-line-before": [
+      "always",
+      {
+        "ignore": ["after-comment", "first-nested"],
+        "severity": "warning"
+      }
+    ],
+    "order/order": ["dollar-variables", "custom-properties", "declarations", "rules", "at-rules"],
+    "order/properties-alphabetical-order": true
+  }
 }

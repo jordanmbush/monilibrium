@@ -5,7 +5,7 @@
     "navigator": true,
     "window": true
   },
-  "plugins": ["prettier"],
+  "plugins": ["prettier", "react", "react-hooks"],
   "parserOptions": {
     "ecmaFeatures": {
       "experimentalObjectRestSpread": true,
@@ -93,6 +93,8 @@
     "prefer-template": "error",
     "quote-props": ["error", "as-needed"],
     "radix": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": "error",
     "react/jsx-closing-bracket-location": "error",
     "react/jsx-closing-tag-location": "error",
     "react/jsx-no-bind": "error",
@@ -104,6 +106,7 @@
     ],
     "react/jsx-pascal-case": "error",
     "react/jsx-wrap-multilines": "error",
+    "react/no-danger": "off",
     "react/no-is-mounted": "error",
     "react/no-multi-comp": "error",
     "react/no-string-refs": "error",
@@ -112,18 +115,19 @@
     "react/require-render-return": "error",
     "require-jsdoc": "off",
     "semi": ["error", "always"],
-    "sort-imports": [
-      "error",
-      {
-        "ignoreMemberSort": false,
-        "memberSyntaxSortOrder": ["single", "multiple", "all", "none"]
-      }
-    ],
     "sort-keys": [
       "error",
       "asc",
       {
         "natural": true
+      }
+    ],
+    "sort-imports": [
+      "error",
+      {
+        "ignoreCase": true,
+        "ignoreMemberSort": false,
+        "memberSyntaxSortOrder": ["all", "single", "multiple", "none"]
       }
     ],
     "space-before-blocks": "error",

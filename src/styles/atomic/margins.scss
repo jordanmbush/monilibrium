@@ -1,0 +1,65 @@
+$max-margin: 40;
+
+@mixin margins {
+  @for $i from 1 through $max-margin {
+    .mar-#{$i} {
+      margin: #{$i}px;
+    }
+
+    .mar-top-#{$i} {
+      margin-top: #{$i}px;
+    }
+
+    .mar-right-#{$i} {
+      margin-right: #{$i}px;
+    }
+
+    .mar-bottom-#{$i} {
+      margin-bottom: #{$i}px;
+    }
+
+    .mar-left-#{$i} {
+      margin-left: #{$i}px;
+    }
+  }
+}
+
+@include margins;
+
+@keyframes loading-left {
+  0% {
+    left: 5px;
+    transform: translate(0, -50%) scale(1);
+    z-index: 1;
+  }
+  2.5% {
+    left: 5px;
+  }
+  25% {
+    transform: translate(0, -50%) scale(0.8);
+    z-index: 0;
+  }
+  47.5% {
+    left: 75px;
+  }
+  50% {
+    left: 75px;
+    transform: translate(0, -50%) scale(1);
+    z-index: 0;
+  }
+  52.5% {
+    left: 75px;
+  }
+  75% {
+    transform: translate(0, -50%) scale(1.2);
+    z-index: 1;
+  }
+  97.5% {
+    left: 5px;
+  }
+  100% {
+    left: 5px;
+    transform: translate(0, -50%) scale(1);
+    z-index: 1;
+  }
+}

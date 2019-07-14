@@ -1,2 +1,20 @@
-@import '~/styles/reset.scss';
-@import '~/styles/flex.scss';
+@import '@styles/reset.scss';
+@import '@styles/flex.scss';
+@import '@styles/atomic/font-sizes.scss';
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

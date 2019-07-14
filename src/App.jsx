@@ -1,21 +1,11 @@
-import Button from '@atoms/Button';
-import React from 'react';
-import './App.scss';
+import Routes from './Routes';
+// eslint-disable-next-line
+import React, {Fragment} from 'react';
 
 const App = () => (
-  <div className="App">
-    <header className="App-header">
-      <p>
-        {'Edit '}
-        <code>src/App.js</code>
-        {' and save to reload.'}
-      </p>
-      <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-        Learn React
-      </a>
-      <Button onClick={() => console.log('button clicked')}>Test</Button>
-    </header>
-  </div>
+  <Fragment>
+    <Routes />
+  </Fragment>
 );
 
 export default App;

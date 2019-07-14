@@ -1,0 +1,43 @@
+.login {
+  background: linear-gradient(#16a068, #f4e83f);
+  height: 100vh;
+  width: 100vw;
+
+  .login-container {
+    color: white;
+    flex-grow: 1;
+
+    .input-container {
+      border-bottom: 1px solid white;
+
+      i {
+        width: 50px;
+      }
+
+      input {
+        all: unset;
+        flex-grow: 1;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 22px;
+        margin: 5px;
+        padding: 5px;
+        width: 80%;
+
+        &::placeholder {
+          color: white;
+          font-weight: 300;
+        }
+      }
+    }
+
+    button {
+      background: none;
+      border: 0;
+      color: white;
+      font-weight: 300;
+      margin-top: 40px;
+      padding: 10px 30%;
+    }
+  }
+}
